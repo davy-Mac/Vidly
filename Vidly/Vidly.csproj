@@ -223,6 +223,14 @@
     <Compile Include="Migrations\201807100629501_DecoratorToCustomerName.Designer.cs">
       <DependentUpon>201807100629501_DecoratorToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807110719175_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201807110719175_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201807110719175_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\.cs" />
+    <Compile Include="Migrations\.Designer.cs">
+      <DependentUpon>.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -331,6 +339,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807100629501_DecoratorToCustomerName.resx">
       <DependentUpon>201807100629501_DecoratorToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807110719175_AddBirthdateToCustomer.resx">
+      <DependentUpon>201807110719175_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\.resx">
+      <DependentUpon>.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
