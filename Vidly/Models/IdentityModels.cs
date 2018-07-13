@@ -22,7 +22,7 @@ namespace Vidly.Models
     {
         public DbSet<Customer> Customers { get; set; } // new property for the ApplicationDbContext (table in the database)
         public DbSet<Movie> Movies { get; set; } // needs to be referenced here by ApplicationDbContext otherwise this table won't be included in migrations
-
+        public DbSet<MembershipType> MembershipTypes { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
