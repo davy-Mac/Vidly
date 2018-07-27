@@ -6,6 +6,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context; //instance of ApplicationDbContext
