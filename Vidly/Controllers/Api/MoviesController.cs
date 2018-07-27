@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Http;
 using Vidly.Dtos;
@@ -20,7 +21,9 @@ namespace Vidly.Controllers.Api
         // GET / api/movies
         public IEnumerable<MovieDto> GetMovies() // returns the Movies from the DB
         {
-            return _context.Movies.ToList()
+            return _context.Movies
+                .Include(m => m.Genre)
+                .ToList()
                 .Select(Mapper.Map<Movie, MovieDto>); // maps out the object and selects it to return source "Movie" target "MovieDto"
         }
 

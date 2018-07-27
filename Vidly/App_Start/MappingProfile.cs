@@ -15,6 +15,8 @@ namespace Vidly
 
             Mapper.CreateMap<MembershipType, MembershipTypeDto>(); // creates a mapping configuration between 'Movie' and 'MovieDto'
 
+            Mapper.CreateMap<Genre, GenreDto>();  // creates a mapping configuration between 'Genre' and 'GenreDto'
+
 
             // Dto to Domain
             Mapper.CreateMap<CustomerDto, Customer>().ForMember(c => c.Id, opt => opt.Ignore()); // Id id te key property for the Movie class, and a key property should not be changed
