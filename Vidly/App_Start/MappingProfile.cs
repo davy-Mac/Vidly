@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using Vidly.Dtos;
 using Vidly.Models;
-using Vidly.Models.Dtos;
 
-namespace Vidly.App_Start
+namespace Vidly
 {
     public class MappingProfile : Profile
     {
@@ -12,6 +12,8 @@ namespace Vidly.App_Start
             Mapper.CreateMap<Customer, CustomerDto>(); // creates a mapping configuration between 2 types (generic method that takes 2 parameters "source" and "target")
 
             Mapper.CreateMap<Movie, MovieDto>(); // creates a mapping configuration between 'Movie' and 'MovieDto'
+
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>(); // creates a mapping configuration between 'Movie' and 'MovieDto'
 
 
             // Dto to Domain

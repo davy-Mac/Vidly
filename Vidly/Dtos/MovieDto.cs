@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Vidly.Models;
 
-namespace Vidly.Models.Dtos
+namespace Vidly.Dtos
 {
     public class MovieDto
     {
