@@ -268,18 +268,24 @@
     <Compile Include="Migrations\201807281241025_AddDriversLicenseToApplicationUser.Designer.cs">
       <DependentUpon>201807281241025_AddDriversLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807290351218_AddPhoneToApplicationUser.cs" />
+    <Compile Include="Migrations\201807290351218_AddPhoneToApplicationUser.Designer.cs">
+      <DependentUpon>201807290351218_AddPhoneToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Models\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -584,6 +590,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807281241025_AddDriversLicenseToApplicationUser.resx">
       <DependentUpon>201807281241025_AddDriversLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807290351218_AddPhoneToApplicationUser.resx">
+      <DependentUpon>201807290351218_AddPhoneToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
