@@ -9,6 +9,8 @@ namespace Vidly
             filters.Add(new HandleErrorAttribute());
 
             filters.Add(new AuthorizeAttribute());
+
+            //filters.Add(new RequireHttpsAttribute());  // this filter will block all "http" unsecured endpoints
         }
     }
 }
