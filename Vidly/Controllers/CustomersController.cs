@@ -68,6 +68,13 @@ namespace Vidly.Controllers
         // GET: Customers
         public ActionResult Index()
         {
+            //if (MemoryCache.Default["Genres"] == null)  // Uncomment to enable Data Caching. Only if necessary!
+            //{
+            //    MemoryCache.Default["Genres"] = _context.Genres.ToList();
+            //}
+
+            //var genres = MemoryCache.Default["Genres"] as IEnumerable<Genre>;
+
             return View();
         }
 
